@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* THEME DETAILS */
+:root.dark {
+  --btn-bg: #333;
+  --btn-border: #eee;
+  --font-color: #eee;
+  --body-bg: #222;
+}
+
+:root.light {
+  --btn-bg: #eee;
+  --btn-border: #222;
+  --font-color: #333;
+  --body-bg: #eee;
+}
+
+/* BASIC FORMATTING */
+
+body {
+  height: 100vh;
+  color: var(--font-color);
+  background-color: var(--body-bg);
+  transition: 0.25s;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.theme-toggle {
+  font-size: 24px;
+  padding: 12px 24px;
+
+  color: var(--font-color);
+  border: 2px solid var(--btn-border);
+  background-color: var(--btn-bg);
+  cursor: pointer;
+  transition: 0.25s;
+}
